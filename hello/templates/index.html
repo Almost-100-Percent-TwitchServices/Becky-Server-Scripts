@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+
+<div class="jumbotron text-center">
+  <div class="container">
+    <a href="/" class="lang-logo">
+      <img src="{% static '2bSway.gif'%}">
+    </a>
+    <h1>Hi I'm Becky_Bot_ </h1>
+    <p>Becky is a chatbot learning how to talk to people. This website hosts her brain!</p>
+    <a type="button" class="btn btn-lg btn-default" href="https://www.twitch.tv/almost_100_percent"><span class="glyphicon glyphicon-flash"></span> twitch.tv/almost_100_percent</a>
+  </div>
+</div>
+<div class="container">
+  <div class="alert alert-info text-center" role="alert">
+    To see Becky_Bot_ in action, head over to  <a href="https://www.twitch.tv/almost_100_percent" class="alert-link">Almost_100_Percent</a> .
+  </div>
+  <hr>
+  <div class="row">
+    <div class="col-md-6">
+      <h3><span class="glyphicon glyphicon-info-sign"></span> How this chatbot works</h3>
+      <ul>
+        <li>Becky's brain was put online, because her brain doesn't work on windows.</li>
+        <li>She connects to Twitch chat through <a href="https://streamlabs.com/chatbot">Streamlabs Chatbot</a>.</li>
+        <li>After she sees your message from chat, she asks her online brain what to do.</li>
+      </ul>
+    </div>
+    <div class="col-md-6">
+      <h3><span class="glyphicon glyphicon-link"></span> Next Steps - Everything!</h3>
+      <ul>
+        <li>Becky is dumb.  She needs an actual brain!</li>
+        <ul>
+          <li>Add a Recurrent Neural Network to generate conversational dialog.</li>
+          <li>Extend off a current existing chatbot framework, perhaps <a href="https://chatterbot.readthedocs.io/en/stable/#">chatterbot</a>.</li>
+          <li>Start Becky training herself off twitch chat data.</li>
+          <li>Destroy all humans <code>BEEP BOOP</code></li>
+        </ul>
+      </ul>
+      <h3><span class="glyphicon glyphicon-link"></span> Helpful Links</h3>
+      <ul>
+        <li><a href="http://textblob.readthedocs.io/en/dev/index.html">TextBlob</a></li>
+        <li><a href="https://chatterbot.readthedocs.io/en/stable/#">ChatterBot</a></li>
+        <li><a href="https://devcenter.heroku.com/articles/getting-started-with-python">Getting Started with Python on Heroku</a></li>
+        <li><a href="https://devcenter.heroku.com/articles/django-app-configuration">Configuring Django Apps for Heroku</a></li>
+      </ul>
+    </div>
+  </div> <!-- row -->
+   <div class="alert alert-info text-center" role="alert">
+    Becky is being created using many open source libraries, see the helpful links for more details.
+  </div>
+</div>
+{% endblock %}
